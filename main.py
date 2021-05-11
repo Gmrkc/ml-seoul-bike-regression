@@ -1,8 +1,3 @@
-"""
-Muhammet Kara 171805036
-Tuğçe Çördük 171805006
-Furkan Gümrükçü 171805057
-"""
 
 from data import load_data
 from train import train_with_cross_val, train_with_kfold
