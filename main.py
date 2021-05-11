@@ -12,7 +12,6 @@ for i in range(1 ,3, 1):
         print("############# Dataset 2: OnlineNewsPopularity #############")
         file = 'OnlineNewsPopularity.csv'
      
-    # Question 1 and 2
     print(">>>> Question 1-2")
     # read data from file and split into train and test groups
     # generate raw and preprocessed dataframes
@@ -20,7 +19,6 @@ for i in range(1 ,3, 1):
     x, y = load_data(file, preprocess=True, filter="no_filter")
     print("Question 1-2 done")
     
-    # Question 3
     print(">>>> Question 3")
     # train with cross validation %80 train %20 test
     # train with raw data
@@ -29,7 +27,6 @@ for i in range(1 ,3, 1):
     proccessed_data_results = train_with_cross_val(x, y, test_size=.2, plot_str=" (Dataset " + str(i) + " Question 3 - Preproccessed Data)")
     print("Question 3 done")
     
-    # Question 4
     print(">>>> Question 4")
     k = 10
     # train with 10-fold
@@ -41,7 +38,6 @@ for i in range(1 ,3, 1):
     print("proccessed data kfold average mse: ", mse, "average r2:", r2)
     print("Question 4 done")
     
-    # Question 5
     print(">>>> Question 5")
     # dataset half sized with cross correlation
     x_raw, y_raw = load_data(file, preprocess=False, filter="corr")
@@ -55,7 +51,6 @@ for i in range(1 ,3, 1):
     print("proccessed data kfold average mse: ", mse, "average r2:", r2)
     print("Question 5 done")
     
-    # Question 6
     print(">>>> Question 6")
     #dataset half sized with mse
     x_raw, y_raw = load_data(file, preprocess=False, filter="mse")
