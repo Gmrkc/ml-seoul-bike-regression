@@ -1,1 +1,1 @@
-# artifical_learning_midterm
+# artificial_learning_midterm
